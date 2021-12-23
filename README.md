@@ -38,8 +38,9 @@ $ todo list                     # Same as above
 $ todo Travel downtown          $ Add a to-do with no deadline
 $ todo CS project 3 12/8        # Add a to-do with a deadline
 $ todo History homework today   # Add a to-do to be done today (you can also use 'tomorrow')
-$ todo done 5                   # Mark to-do #5 as done
-$ todo edit 3                   # Edit to-do #3
+$ todo done 9                   # Mark to-do #9 as done
+$ todo done 1 2 3               # Mark to-do's 1, 2, and 3 as done
+$ todo edit 5                   # Edit to-do #5
 $ todo delete 7                 # Delete to-do #7
 ```
 
@@ -49,14 +50,13 @@ to-do app. If you are ready to learn more advanced features, read on.
 ### Adding and managing to-do lists
 
 Adam's To-do allows you to create many to-do lists. Each to-do list must and can
-only have a one-word name. You can name your list anything but "new" and
-"default".
+only have a one-word name. You can name your list anything but "default".
 
 ```
 $ todo create shopping          # Create a new to-do list
 $ todo rename books             # Rename a list
 $ todo delete grocery           # Delete a list
-$ todo list lists               # List all to-do lists
+$ todo lists                    # List all to-do lists
 ```
 
 A default to-do list is always available and is used if you do not specify a
@@ -156,7 +156,7 @@ To add reminders and optional to-do's on a different list, insert the name of
 the list after the keyword 'remind'/'optional':
 
 ```
-todo remind birthdays Max 5/5
-todo optional shopping LED lights
+$ todo remind birthdays Max 5/5
+$ todo optional shopping LED lights
 ```
 
